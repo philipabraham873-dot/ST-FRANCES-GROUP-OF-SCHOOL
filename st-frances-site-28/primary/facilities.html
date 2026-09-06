@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facilities | St. Frances' Academy Group</title>
+<meta name="description" content="Facilities at Omolere Nursery/Primary School, including classrooms, playground, boarding house and more.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="St. Frances' Academy Group of Schools">
+<meta property="og:title" content="Facilities | St. Frances' Academy Group">
+<meta property="og:description" content="Facilities at Omolere Nursery/Primary School, including classrooms, playground, boarding house and more.">
+<meta property="og:url" content="https://YOUR-DOMAIN-HERE.com/primary/facilities.html">
+<meta property="og:image" content="https://YOUR-DOMAIN-HERE.com/assets/images/og/primary-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Facilities | St. Frances' Academy Group">
+<meta name="twitter:description" content="Facilities at Omolere Nursery/Primary School, including classrooms, playground, boarding house and more.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN-HERE.com/assets/images/og/primary-og.jpg">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/icons/favicon-180.png">
+<link rel="stylesheet" href="../assets/css/site-extra.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --navy:#1B2350; --navy-deep:#12172F; --blue-light:#F1E7D3;
+    --parchment:#F6F2E9; --parchment-dim:#EDE7D8;
+    --gold:#B8945F; --ink:#20202B;
+    --white:#FFFFFF; --radius-sm:6px; --radius-lg:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--white);line-height:1.55;}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px;}
+  .icon{width:19px;height:19px;display:block;}
+
+  /* ---------- Top bar and navigation ---------- */
+  .topbar{position:sticky;top:0;z-index:50;background:var(--white);border-bottom:1px solid rgba(27,35,80,.15);}
+  .topbar .wrap{position:relative;display:flex;align-items:center;justify-content:space-between;height:64px;}
+  .brand{display:flex;align-items:center;gap:12px;color:var(--navy);}
+  .crest{width:auto;height:36px;max-width:150px;object-fit:contain;}
+  .crest-fallback{
+    width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--gold);
+    display:none;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:700;font-size:14px;
+  }
+  .brand-name{font-size:14px;color:rgba(27,35,80,.75);font-weight:700;text-transform:uppercase;}
+  .topnav{display:flex;gap:16px;font-size:13.5px;flex-wrap:wrap;}
+  .topnav a{color:var(--navy);opacity:.85;font-weight:600;white-space:nowrap;}
+  .topnav a:hover{opacity:1;}
+  .nav-dropdown{position:relative;}
+  .nav-dropdown-toggle{
+    background:none;border:none;font:inherit;color:var(--navy);opacity:.85;font-weight:600;
+    cursor:pointer;display:inline-flex;align-items:center;gap:4px;padding:0;white-space:nowrap;
+  }
+  .nav-dropdown-toggle:hover{opacity:1;}
+  .nav-dropdown-toggle svg{transition:transform .15s ease;}
+  .nav-dropdown.open .nav-dropdown-toggle svg{transform:rotate(180deg);}
+  .nav-dropdown-menu{
+    position:absolute;top:100%;left:0;margin-top:10px;
+    background:var(--white);border:1px solid rgba(27,35,80,.12);border-radius:10px;
+    box-shadow:0 12px 28px rgba(18,23,47,.14);min-width:180px;padding:8px;
+    display:none;flex-direction:column;gap:2px;z-index:70;
+  }
+  .nav-dropdown.open .nav-dropdown-menu{display:flex;}
+  .nav-dropdown-menu a{padding:10px 12px;border-radius:6px;font-size:13.5px;font-weight:600;color:var(--navy);opacity:1;}
+  .nav-dropdown-menu a:hover{background:var(--parchment);}
+
+  .nav-toggle{display:none;background:none;border:none;color:var(--navy);font-size:24px;cursor:pointer;line-height:1;}
+
+  @media (max-width:980px){
+    .topnav{
+      display:none;position:absolute;top:64px;left:0;right:0;
+      background:var(--white);flex-direction:column;padding:10px 20px 16px;gap:0;
+      border-top:1px solid rgba(27,35,80,.15);max-height:80vh;overflow-y:auto;
+    }
+    .topnav.open{display:flex;}
+    .topnav a{padding:12px 0;border-bottom:1px solid rgba(27,35,80,.12);}
+    .nav-toggle{display:block;}
+    .nav-dropdown{width:100%;}
+    .nav-dropdown-toggle{width:100%;justify-content:flex-start;padding:12px 0;border-bottom:1px solid rgba(27,35,80,.12);}
+    .nav-dropdown-menu{
+      position:static;box-shadow:none;border:none;margin-top:0;min-width:0;
+      padding:0 0 4px 14px;background:none;
+    }
+    .nav-dropdown-menu a{padding:10px 0;border-bottom:none;opacity:.85;}
+  }
+
+  /* ---------- Hero ---------- */
+  .sec-hero{background:var(--navy);color:var(--white);padding:64px 0 56px;text-align:center;border-top:4px solid var(--gold);}
+  .sec-hero .school-mark{width:72px;height:72px;border-radius:50%;object-fit:cover;margin:0 auto 18px;background:rgba(255,255,255,.9);}
+  .sec-hero .mark-fallback{
+    width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.9);color:var(--navy);
+    display:none;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:700;font-size:20px;margin:0 auto 18px;
+  }
+  .sec-hero .badge{display:inline-block;background:rgba(255,255,255,.18);padding:6px 16px;border-radius:999px;font-size:13px;margin-bottom:16px;}
+  .sec-hero h1{font-size:clamp(28px,4.5vw,42px);font-weight:600;margin-bottom:14px;}
+  .sec-hero p{max-width:520px;margin:0 auto;opacity:.92;font-size:15.5px;}
+
+  /* ---------- Shared section styles ---------- */
+  .body-section{padding:52px 0;}
+  .body-section.alt{background:var(--parchment);}
+  h2.section-head{font-size:23px;color:var(--navy);font-weight:600;margin-bottom:6px;}
+  p.section-lede{font-size:15px;color:#4a4a55;max-width:70ch;margin-top:8px;}
+
+  .card-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px;}
+  @media (max-width:780px){.card-row{grid-template-columns:1fr;}}
+  .pill-card{background:var(--blue-light);border-radius:var(--radius-lg);padding:24px 20px;border:1px solid rgba(27,35,80,.08);}
+  .pill-card .icon-circle{
+    width:38px;height:38px;border-radius:50%;background:var(--white);
+    display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--navy);
+  }
+  .pill-card h3{font-size:17px;color:var(--navy);margin-bottom:8px;}
+  .pill-card p{font-size:14px;color:#3f4a63;}
+
+  .simple-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px;}
+  @media (max-width:780px){.simple-grid{grid-template-columns:repeat(2,1fr);}}
+  .simple-grid div{
+    background:var(--white);border:1px solid rgba(27,35,80,.12);border-radius:var(--radius-sm);
+    padding:15px 12px;font-size:13.5px;color:var(--navy);text-align:center;font-weight:500;
+  }
+
+  .staff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px;}
+  @media (max-width:780px){.staff-grid{grid-template-columns:1fr;}}
+  .staff-card{background:var(--white);border:1px solid rgba(27,35,80,.1);border-radius:var(--radius-lg);padding:22px 20px;text-align:center;}
+  .staff-photo{
+    width:64px;height:64px;border-radius:50%;background:var(--blue-light);color:var(--navy);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-family:'Fraunces',serif;font-weight:600;
+  }
+  .staff-card h4{font-size:15.5px;color:var(--navy);margin-bottom:4px;}
+  .staff-card span{font-size:13px;color:#5c6580;}
+
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px;}
+  @media (max-width:780px){.gallery-grid{grid-template-columns:repeat(2,1fr);}}
+  .gallery-tile{
+    aspect-ratio:1/1;border-radius:var(--radius-sm);overflow:hidden;
+    background:var(--blue-light);position:relative;
+  }
+  .gallery-tile img{width:100%;height:100%;object-fit:cover;}
+  .gallery-fallback{
+    width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--navy);opacity:.4;
+  }
+
+  .news-list{margin-top:24px;display:flex;flex-direction:column;gap:14px;}
+  .news-item{
+    display:flex;gap:16px;background:var(--parchment);border-radius:var(--radius-sm);
+    padding:16px 18px;border:1px solid rgba(0,0,0,.05);align-items:flex-start;
+  }
+  .news-date{
+    background:var(--navy);color:var(--white);border-radius:var(--radius-sm);
+    padding:8px 10px;font-size:12px;text-align:center;min-width:56px;font-weight:600;flex-shrink:0;
+  }
+  .news-item h4{font-size:15px;color:var(--navy);margin-bottom:4px;}
+  .news-item p{font-size:13.5px;color:#5a4a54;}
+
+  .admission-steps{margin-top:24px;display:flex;flex-direction:column;gap:14px;}
+  .step{display:flex;gap:16px;align-items:flex-start;}
+  .step-num{
+    width:30px;height:30px;border-radius:50%;background:var(--navy);color:var(--white);
+    display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;flex-shrink:0;
+  }
+  .step p{font-size:14.5px;color:#4a4a55;}
+  .step h4{font-size:15px;color:var(--navy);margin-bottom:2px;}
+
+  .portal-cta{
+    margin-top:44px;background:var(--navy);color:var(--white);border-radius:var(--radius-lg);
+    padding:30px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  }
+  .portal-cta h3{font-size:18px;margin-bottom:6px;display:flex;align-items:center;gap:10px;}
+  .portal-cta p{font-size:14px;opacity:.85;}
+  .btn{display:inline-flex;align-items:center;gap:7px;padding:12px 22px;border-radius:999px;font-size:14px;font-weight:600;white-space:nowrap;}
+  .btn-gold{background:var(--gold);color:var(--navy-deep);}
+
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px;}
+  @media (max-width:780px){.contact-grid{grid-template-columns:1fr;}}
+  .contact-line{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;}
+  .contact-line .icon{color:var(--navy);margin-top:2px;flex-shrink:0;}
+  .contact-line span{font-size:14.5px;color:#3f4a63;}
+  .placeholder{color:#9b6f2f;font-weight:500;}
+
+  .back-link{display:inline-block;margin-top:8px;font-size:14px;color:var(--navy);font-weight:600;}
+
+  footer{background:var(--navy-deep);color:rgba(246,242,233,.7);padding:32px 0;font-size:13.5px;text-align:center;}
+
+
+  /* ---------- Slim sub-page header ---------- */
+  .page-head{background:var(--navy);color:var(--parchment);padding:34px 0 30px;border-top:4px solid var(--gold);}
+  .page-head .crumb{font-size:12.5px;opacity:.7;margin-bottom:8px;}
+  .page-head .crumb a{opacity:1;font-weight:600;}
+  .page-head .crumb a:hover{text-decoration:underline;}
+  .page-head h1{font-size:clamp(22px,3.4vw,30px);font-weight:600;}
+
+  /* ---------- Section-home hub links ---------- */
+  .hub{padding:52px 0 70px;}
+  .hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px;}
+  @media (max-width:780px){.hub-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:520px){.hub-grid{grid-template-columns:1fr;}}
+  .hub-card{
+    background:var(--white);border:1px solid rgba(27,35,80,.1);border-radius:var(--radius-lg);
+    padding:20px 18px;display:flex;flex-direction:column;gap:10px;
+  }
+  .hub-card .hub-icon{
+    width:36px;height:36px;border-radius:50%;background:var(--blue-light);color:var(--navy);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .hub-card h3{font-size:15.5px;color:var(--navy);}
+  .hub-card span.go{font-size:13px;color:var(--gold);font-weight:600;}
+
+</style>
+</head>
+<body data-root-depth="../">
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <img class="crest" src="../assets/images/group-logo.png" alt="School group logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <span class="crest-fallback">SF</span>
+      <span class="brand-name">St. Frances' Academy Group of Schools</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+    <nav class="topnav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="academics.html">Academics</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="staff.html">School Management/Staff</a>
+      <a href="facilities.html" aria-current="page">Facilities</a>
+      <a href="life.html">School Life</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="news.html">News & Events</a>
+      <div class="nav-dropdown" id="portalDropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          Portal
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="[ADD STUDENT PORTAL LINK]">Student Portal</a>
+          <a href="[ADD TEACHER PORTAL LINK]">Teacher Portal</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </div>
+</div>
+
+<header class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Omolere Nursery/Primary School</a> &rsaquo; Facilities</div>
+    <h1>Facilities</h1>
+  </div>
+</header>
+
+<section class="body-section" id="facilities">
+  <div class="wrap">
+    <h2 class="section-head">Facilities</h2>
+    <p class="section-lede">Our compound is set up for young learners, with spaces designed for both structured lessons and free play.</p>
+    <div class="simple-grid">
+      <div>Bright classrooms</div>
+      <div>Playground</div>
+      <div>Reading corner</div>
+      <div>Sick bay</div>
+      <div>Dining area</div>
+      <div>Boarding house</div>
+      <div>Secure compound</div>
+      <div>Assembly hall</div>
+      <div>Handwashing stations</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Omolere Nursery/Primary School, part of St. Frances' Academy Group of Schools.
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function(){
+    document.getElementById('mainNav').classList.toggle('open');
+  });
+  document.querySelectorAll('#mainNav a').forEach(function(link){
+    link.addEventListener('click', function(){
+      document.getElementById('mainNav').classList.remove('open');
+    });
+  });
+</script>
+
+<script>
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var parent = btn.closest('.nav-dropdown');
+      var isOpen = parent.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  });
+  document.addEventListener('click', function(e){
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(dd){
+      if (!dd.contains(e.target)){
+        dd.classList.remove('open');
+        var t = dd.querySelector('.nav-dropdown-toggle');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+</script>
+
+<script>window.NEWS_SCHOOL = "primary";</script>
+<script src="../assets/js/firebase-config.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script src="../assets/js/breaking-news.js"></script>
+
+</body>
+</html>
