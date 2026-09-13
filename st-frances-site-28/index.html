@@ -103,11 +103,11 @@
   .school-card.primary-card{background:var(--navy);border:1px solid rgba(255,255,255,.12);}
   .school-card.secondary-card{background:var(--navy);border:1px solid rgba(255,255,255,.12);}
 
-  .group-note{background:var(--parchment-dim);padding:52px 0;border-top:1px solid rgba(0,0,0,.06);border-bottom:1px solid rgba(0,0,0,.06);}
+  .group-note{background:var(--navy);padding:52px 0;border-top:1px solid rgba(0,0,0,.06);border-bottom:1px solid rgba(0,0,0,.06);}
   .group-note .wrap{display:grid;grid-template-columns:1fr 2fr;gap:36px;align-items:start;}
   @media (max-width:780px){.group-note .wrap{grid-template-columns:1fr;}}
-  .group-note h3{font-size:21px;font-weight:600;color:var(--navy);}
-  .group-note p{font-size:15px;color:#4a4a55;max-width:60ch;}
+  .group-note h3{font-size:21px;font-weight:600;color:var(--white);}
+  .group-note p{font-size:15px;color:white;max-width:60ch;}
 
   /* ---------- Shared section styles (matches About Us pages) ---------- */
   .body-section{padding:52px 0;}
@@ -118,13 +118,13 @@
   /* ---------- Why Families Choose Us (pillar cards) ---------- */
   .card-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px;}
   @media (max-width:780px){.card-row{grid-template-columns:1fr;}}
-  .pill-card{background:var(--blue-light);border-radius:var(--radius-lg);padding:24px 20px;border:1px solid rgba(27,35,80,.08);}
+  .pill-card{background:var(--navy);border-radius:var(--radius-lg);padding:24px 20px;border:1px solid rgba(27,35,80,.08);}
   .pill-card .icon-circle{
     width:38px;height:38px;border-radius:50%;background:var(--white);
     display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--navy);
   }
   .pill-card h3{font-size:17px;color:var(--navy);margin-bottom:8px;}
-  .pill-card p{font-size:14px;color:#3f4a63;}
+  .pill-card p{font-size:14px;color:white;}
 
   /* ---------- Welcome note (Proprietor/Chairman) ---------- */
   .chairman-grid{display:grid;grid-template-columns:0.9fr 1.15fr;gap:32px;align-items:center;margin-top:26px;}
@@ -136,9 +136,9 @@
     text-align:center;padding:20px;color:var(--navy);opacity:.55;font-size:13.5px;font-weight:600;
   }
   .chairman-grid .welcome-note{margin-top:0;}
-  .welcome-note{background:var(--parchment);border-radius:var(--radius-lg);padding:28px 26px;border:1px solid rgba(27,35,80,.08);margin-top:26px;}
-  .body-section.alt .welcome-note{background:var(--white);}
-  .welcome-note p{font-size:15px;color:#3f4a63;font-style:italic;margin-bottom:14px;}
+  .welcome-note{background:var(--navy);border-radius:var(--radius-lg);padding:28px 26px;border:1px solid rgba(27,35,80,.08);margin-top:26px;}
+  .body-section.alt .welcome-note{background:var(--transparent);}
+  .welcome-note p{font-size:15px;color:var(--navy);font-style:normal;margin-bottom:14px;}
   .welcome-note cite{font-style:normal;font-weight:600;color:var(--navy);font-size:14px;display:block;}
 
   /* ---------- Latest news preview ---------- */
@@ -179,13 +179,13 @@
   .btn-row{display:flex;gap:12px;flex-wrap:wrap;}
 
   /* ---------- Admissions CTA band ---------- */
-  .admissions-band{background:var(--navy);color:var(--parchment);padding:52px 0;border-top:4px solid var(--gold);}
+  .admissions-band{background:var(--gold);color:var(--gold);padding:52px 0;border-top:4px solid var(--gold);}
   .admissions-band .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
   .admissions-band h2{font-size:clamp(21px,3vw,28px);font-weight:600;margin-bottom:8px;color:var(--white);}
   .admissions-band p{font-size:14.5px;opacity:.85;max-width:46ch;}
   /* Admissions buttons keep their plain background always -- no hover/tap color change */
   .admissions-band .btn-gold:hover,
-  .admissions-band .btn-gold:active{background:var(--gold);color:var(--navy-deep);}
+  .admissions-band .btn-gold:active{background:var(--gold);color:var(--navy-deep);} 
   .admissions-band .btn-outline:hover,
   .admissions-band .btn-outline:active{background:transparent;color:var(--white);border-color:rgba(255,255,255,.55);}
 
@@ -378,7 +378,7 @@
       <p>Spaces are limited across both schools. Start your child's application today.</p>
     </div>
     <div class="btn-row">
-      <a class="btn btn-gold" href="primary/admissions.html">
+      <a class="btn btn-outline" href="primary/admissions.html">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
         Omolere Admissions
       </a>
