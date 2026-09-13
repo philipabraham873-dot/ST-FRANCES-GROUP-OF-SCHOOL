@@ -18,6 +18,7 @@ Also put these in assets/images/ (used across every page):
 group-logo.png       - shown in the top navigation bar on all pages
 omolere-logo.png     - shown on the Omolere primary home page
 stfrances-logo.png   - shown on the St. Frances' Academy home page
+chairman.jpg          - shown next to the Proprietor/Chairman's welcome note on the group homepage (index.html). Square or portrait photos look best. If missing, that box just shows a plain placeholder message, so nothing breaks.
 
 Staff photos go in assets/images/staff/ using these file names (School
 Management/Staff page). Square, front-facing headshots work best. If a
