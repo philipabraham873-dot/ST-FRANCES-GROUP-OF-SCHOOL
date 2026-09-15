@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found | St. Frances' Academy Group of Schools</title>
+<meta name="description" content="The page you were looking for could not be found on the St. Frances' Academy Group of Schools website.">
+<link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/icons/favicon-180.png">
+<link rel="stylesheet" href="assets/css/site-extra.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --navy:#1B2350;
+    --navy-deep:#12172F;
+    --parchment:#F6F2E9;
+    --parchment-dim:#EDE7D8;
+    --gold:#B8945F;
+    --ink:#20202B;
+    --white:#FFFFFF;
+    --radius-sm:6px;
+    --radius-lg:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--white);line-height:1.55;}
+  h1,h2,h3{font-family:'Fraunces',serif;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px;}
+
+  .topbar{position:sticky;top:0;z-index:50;background:var(--white);border-bottom:1px solid rgba(27,35,80,.15);}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;flex-wrap:wrap;}
+  .brand{display:flex;align-items:center;gap:12px;color:var(--navy);}
+  .crest{width:auto;height:36px;max-width:150px;object-fit:contain;}
+  .crest-fallback{
+    width:36px;height:36px;border-radius:50%;
+    background:var(--navy);color:var(--gold);
+    display:none;align-items:center;justify-content:center;
+    font-family:'Fraunces',serif;font-weight:700;font-size:14px;
+  }
+  .brand-name{font-size:14px;letter-spacing:.02em;font-weight:700;text-transform:uppercase;}
+  .brand-name strong{font-weight:600;}
+  .topnav{display:flex;gap:24px;font-size:14px;}
+  .topnav a{color:var(--navy);opacity:.75;}
+  .topnav a:hover{opacity:1;}
+
+  .hero{background:var(--navy);color:var(--parchment);padding:72px 0 84px;text-align:center;}
+  .hero .eyebrow{color:var(--gold);font-size:14px;margin-bottom:18px;}
+  .hero h1{font-size:clamp(30px,5vw,52px);font-weight:600;line-height:1.1;max-width:780px;margin:0 auto 20px;}
+  .hero p.lede{max-width:540px;margin:0 auto;color:rgba(246,242,233,.75);font-size:16px;}
+
+  .picker{padding:56px 0 80px;}
+  .picker-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  @media (max-width:780px){.picker-grid{grid-template-columns:1fr;}}
+
+  .school-card{
+    border-radius:var(--radius-lg);padding:36px 28px;color:var(--white);
+    position:relative;overflow:hidden;min-height:260px;
+    display:flex;flex-direction:column;justify-content:flex-end;
+  }
+  .school-card .tag{font-size:13px;opacity:.85;margin-bottom:10px;}
+  .school-card h2{font-size:26px;font-weight:600;margin-bottom:10px;}
+  .school-card p{font-size:14px;opacity:.9;max-width:34ch;margin-bottom:20px;}
+  .school-card .go{
+    display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;
+    background:rgba(255,255,255,.14);padding:10px 18px;border-radius:999px;width:fit-content;
+  }
+  .school-card.primary-card{background:var(--navy);border:1px solid rgba(255,255,255,.12);}
+  .school-card.secondary-card{background:var(--navy);border:1px solid rgba(255,255,255,.12);}
+
+  .group-note{background:var(--parchment-dim);padding:52px 0;border-top:1px solid rgba(0,0,0,.06);border-bottom:1px solid rgba(0,0,0,.06);}
+  .group-note .wrap{display:grid;grid-template-columns:1fr 2fr;gap:36px;align-items:start;}
+  @media (max-width:780px){.group-note .wrap{grid-template-columns:1fr;}}
+  .group-note h3{font-size:21px;font-weight:600;color:var(--navy);}
+  .group-note p{font-size:15px;color:#4a4a55;max-width:60ch;}
+
+  footer{background:var(--navy-deep);color:rgba(246,242,233,.7);padding:44px 0 28px;font-size:14px;}
+  footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px;}
+  @media (max-width:780px){footer .wrap{grid-template-columns:1fr;}}
+  footer h5{color:var(--parchment);font-size:14px;margin-bottom:12px;font-weight:600;}
+  footer ul{list-style:none;}
+  footer li{margin-bottom:6px;}
+  footer .bottom{margin-top:32px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);font-size:12.5px;opacity:.6;text-align:center;}
+  .placeholder{color:var(--gold);}
+
+  .icon{width:20px;height:20px;display:block;}
+  .icon-circle{
+    width:44px;height:44px;border-radius:50%;
+    background:rgba(255,255,255,.14);
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:16px;color:var(--white);
+  }
+  .contact-line{display:flex;align-items:flex-start;gap:10px;}
+  .contact-line .icon{width:16px;height:16px;margin-top:2px;flex-shrink:0;color:var(--gold);}
+
+
+  .notfound{min-height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 20px;}
+  .notfound .code{font-family:'Fraunces',serif;font-size:clamp(60px,12vw,120px);color:var(--navy);line-height:1;margin-bottom:8px;}
+  .notfound h1{font-size:clamp(20px,3vw,28px);color:var(--navy);margin-bottom:12px;}
+  .notfound p{color:#4a4a55;max-width:46ch;margin:0 auto 26px;}
+  .notfound .links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+  .notfound .btn{display:inline-flex;align-items:center;padding:12px 22px;border-radius:999px;font-size:14px;font-weight:600;background:var(--navy);color:var(--parchment);}
+  .notfound .btn.alt{background:var(--gold);color:var(--navy-deep);}
+
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img class="crest" src="assets/images/group-logo.png" alt="School group logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <span class="crest-fallback">SF</span>
+      <span class="brand-name">St. Frances' Academy Group of Schools</span>
+    </a>
+    <nav class="topnav">
+      <a href="primary/index.html">Primary</a>
+      <a href="secondary/index.html">Secondary</a>
+    </nav>
+  </div>
+</div>
+
+<section class="notfound">
+  <div class="wrap">
+    <div class="code">404</div>
+    <h1>We couldn't find that page</h1>
+    <p>The page you're looking for may have moved or no longer exists. Try one of the links below, or head back to the homepage.</p>
+    <div class="links">
+      <a class="btn" href="index.html">Group Home</a>
+      <a class="btn alt" href="primary/index.html">Omolere Primary</a>
+      <a class="btn alt" href="secondary/index.html">St. Frances' Academy</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#12172F;color:rgba(246,242,233,.7);padding:28px 0;font-size:13.5px;text-align:center;">
+  © 2026 St. Frances' Academy Group of Schools. All rights reserved.
+</footer>
+
+</body>
+</html>
