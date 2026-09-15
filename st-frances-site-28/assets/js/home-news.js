@@ -31,6 +31,8 @@
   const schoolLabels = {
     primary: "Omolere Primary",
     secondary: "St. Frances' Academy",
+    "annex-primary": "Annex Campus (Primary)",
+    "annex-secondary": "Annex Campus (Secondary)",
     group: "Group-wide"
   };
 

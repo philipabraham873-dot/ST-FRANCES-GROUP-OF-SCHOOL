@@ -210,10 +210,10 @@
   .welcome-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:36px;align-items:center;margin-top:22px;}
   @media (max-width:780px){.welcome-grid{grid-template-columns:1fr;}}
   .welcome-photo{
-    width:100%;max-height:460px;border-radius:var(--radius-lg);background:var(--blue-light);
+    width:100%;aspect-ratio:4/5;max-height:460px;border-radius:var(--radius-lg);background:var(--blue-light);
     display:flex;align-items:center;justify-content:center;overflow:hidden;
   }
-  .welcome-photo img{width:100%;height:100%;max-height:460px;object-fit:contain;display:block;}
+  .welcome-photo img{width:100%;height:100%;max-height:460px;object-fit:cover;object-position:center top;display:block;}
   .welcome-photo .welcome-initial{font-family:'Fraunces',serif;font-weight:600;font-size:80px;color:var(--navy);}
   .welcome-text .welcome-eyebrow{
     font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--navy);margin-bottom:10px;
@@ -304,14 +304,23 @@
       <a href="life.html">School Life</a>
       <a href="gallery.html">Gallery</a>
       <a href="news.html">News & Events</a>
+      <div class="nav-dropdown" id="campusesDropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          Our Campuses
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="../annex/primary/index.html">Annex Campus</a>
+        </div>
+      </div>
       <div class="nav-dropdown" id="portalDropdown">
         <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
           Portal
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </button>
         <div class="nav-dropdown-menu">
-          <a href="[ADD STUDENT PORTAL LINK]">Student Portal</a>
-          <a href="[ADD TEACHER PORTAL LINK]">Teacher Portal</a>
+          <a href="https://philedtech-student-portal.netlify.app/">Student Portal</a>
+          <a href="https://philedtech-teachers-portal.netlify.app/">Teacher Portal</a>
         </div>
       </div>
       <a href="contact.html">Contact Us</a>
@@ -339,15 +348,15 @@
         <span class="welcome-initial" style="display:none;">HT</span>
       </div>
       <div class="welcome-text">
-        <div class="welcome-eyebrow">A Welcome From Our Head Teacher</div>
-        <p class="welcome-message"><span class="placeholder">Dear Parents and Guardians,
+        <div class="welcome-eyebrow">A Welcome Address From Our Head Teacher</div>
+        <p class="welcome-message">Dear Parents and Guardians,
 On behalf of the entire staff and management of Omolere Nursery/Primary School, it is my pleasure to welcome you and your child to our school family.
 At Omolere, we believe that every child deserves a nurturing, safe, and stimulating environment in which to discover their gifts and grow into confident, well-rounded individuals. From the moment your child steps into our nursery classes to the day they graduate from primary school, our dedicated teachers and support staff work hand in hand with you to build a solid foundation — academically, morally, and socially.
 Our approach combines a strong academic curriculum with attention to character, creativity, and care for one another. We understand that these early years shape a lifetime of learning, and we take that responsibility seriously.
 We see education as a partnership. We encourage you to stay involved, ask questions, and work closely with our teachers so that together, we can give your child the best possible start in life.
 Once again, welcome to Omolere. We look forward to a rewarding journey with you and your child.
-Warm regards,</span></p>
-        <div class="welcome-signoff"><span class="placeholder">AKINGBADE REGINA OLUFUNMILAYO</span></div>
+Warm regards,</p>
+        <div class="welcome-signoff">ADELEYE OGENEH JOSEPHINE</div>
         <div class="welcome-role">HEAD TEACHER</div>
       </div>
     </div>
@@ -361,7 +370,8 @@ Warm regards,</span></p>
       <div class="mv-card">
         <h3>Our Mission and Vision</h3>
         <p>Providing world-class education and training to pupils while remaining at the forefront of raising the leaders of tomorrow</p>
-      </div>     
+      </div>    
+     
   
     </div>
   </div>

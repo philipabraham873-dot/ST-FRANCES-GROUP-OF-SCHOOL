@@ -203,10 +203,10 @@
   .welcome-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:36px;align-items:center;margin-top:22px;}
   @media (max-width:780px){.welcome-grid{grid-template-columns:1fr;}}
   .welcome-photo{
-    width:100%;max-height:460px;border-radius:var(--radius-lg);background:var(--blue-light);
+    width:100%;aspect-ratio:4/5;max-height:460px;border-radius:var(--radius-lg);background:var(--blue-light);
     display:flex;align-items:center;justify-content:center;overflow:hidden;
   }
-  .welcome-photo img{width:100%;height:100%;max-height:460px;object-fit:contain;display:block;}
+  .welcome-photo img{width:100%;height:100%;max-height:460px;object-fit:cover;object-position:center top;display:block;}
   .welcome-photo .welcome-initial{font-family:'Fraunces',serif;font-weight:600;font-size:80px;color:var(--navy);}
   .welcome-text .welcome-eyebrow{
     font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;
@@ -297,14 +297,23 @@
       <a href="life.html">School Life</a>
       <a href="gallery.html">Gallery</a>
       <a href="news.html">News & Events</a>
+      <div class="nav-dropdown" id="campusesDropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          Our Campuses
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="../annex/secondary/index.html">Annex Campus</a>
+        </div>
+      </div>
       <div class="nav-dropdown" id="portalDropdown">
         <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
           Portal
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </button>
         <div class="nav-dropdown-menu">
-          <a href="[ADD STUDENT PORTAL LINK]">Student Portal</a>
-          <a href="[ADD TEACHER PORTAL LINK]">Teacher Portal</a>
+          <a href="https://philedtech-student-portal.netlify.app/">Student Portal</a>
+          <a href="https://philedtech-teachers-portal.netlify.app/">Teacher Portal</a>
         </div>
       </div>
       <a href="contact.html">Contact Us</a>
@@ -333,14 +342,14 @@
       </div>
       <div class="welcome-text">
         <div class="welcome-eyebrow">A Welcome Address From Our Principal</div>
-        <p class="welcome-message"><span class="placeholder">Dear Parents, Guardians, and Students,
+        <p class="welcome-message">Dear Parents, Guardians, and Students,
 On behalf of the management and staff of St. Frances' Academy, it is my pleasure to welcome you to our school community.
 St. Frances' Academy is committed to providing a well rounded secondary education that prepares young people not just to pass examinations, but to think critically, act with integrity, and lead with confidence. Across all three streams, our teachers work to bring out the very best in every student — academically, socially, and morally — so that they leave us ready for the challenges of higher education and life beyond the classroom.
 We hold our students to high standards because we believe they are capable of meeting them. At the same time, we recognise that the teenage years call for guidance, patience, and genuine care, and our staff are committed to providing all three.
 Education is most effective when home and school work together. We warmly invite you to partner with us — through open communication, active involvement, and shared commitment — as we guide your child toward academic excellence and strong character.
 I look forward to a fruitful and rewarding journey with you and your child at St. Frances' Academy.
-Warm regards,</span></p>
-        <div class="welcome-signoff"><span class="placeholder">ATOBATELE OLAROTIMI JANET</span></div>
+Warm regards,</p>
+        <div class="welcome-signoff">ATOBATELE OLAROTIMI JANET</div>
         <div class="welcome-role">PRINCIPAL</div>
       </div>
     </div>

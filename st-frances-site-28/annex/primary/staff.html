@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>News & Events | St. Frances' Academy Group</title>
-<meta name="description" content="Latest news and upcoming events for Omolere Nursery/Primary School families.">
+<title>School Management/Staff | St. Frances' Academy Group</title>
+<meta name="description" content="Meet the school management and teaching staff at Omolere Nursery/Primary School.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="St. Frances' Academy Group of Schools">
-<meta property="og:title" content="News & Events | St. Frances' Academy Group">
-<meta property="og:description" content="Latest news and upcoming events for Omolere Nursery/Primary School families.">
-<meta property="og:url" content="https://YOUR-DOMAIN-HERE.com/primary/news.html">
+<meta property="og:title" content="School Management/Staff | St. Frances' Academy Group">
+<meta property="og:description" content="Meet the school management and teaching staff at Omolere Nursery/Primary School.">
+<meta property="og:url" content="https://YOUR-DOMAIN-HERE.com/annex/primary/staff.html">
 <meta property="og:image" content="https://YOUR-DOMAIN-HERE.com/assets/images/og/primary-og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="News & Events | St. Frances' Academy Group">
-<meta name="twitter:description" content="Latest news and upcoming events for Omolere Nursery/Primary School families.">
+<meta name="twitter:title" content="School Management/Staff | St. Frances' Academy Group">
+<meta name="twitter:description" content="Meet the school management and teaching staff at Omolere Nursery/Primary School.">
 <meta name="twitter:image" content="https://YOUR-DOMAIN-HERE.com/assets/images/og/primary-og.jpg">
-<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="../assets/icons/favicon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="../assets/icons/favicon-180.png">
-<link rel="stylesheet" href="../assets/css/site-extra.css">
+<link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/icons/favicon-180.png">
+<link rel="stylesheet" href="../../assets/css/site-extra.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -130,9 +130,12 @@
   @media (max-width:780px){.staff-grid{grid-template-columns:1fr;}}
   .staff-card{background:var(--white);border:1px solid rgba(27,35,80,.1);border-radius:var(--radius-lg);padding:22px 20px;text-align:center;}
   .staff-photo{
-    width:64px;height:64px;border-radius:50%;background:var(--blue-light);color:var(--navy);
-    display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-family:'Fraunces',serif;font-weight:600;
+    width:100%;aspect-ratio:1/1;border-radius:var(--radius-sm);background:var(--blue-light);color:var(--navy);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:'Fraunces',serif;font-weight:600;
+    font-size:56px;position:relative;overflow:hidden;
   }
+  .staff-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .staff-initials{position:relative;z-index:1;}
   .staff-card h4{font-size:15.5px;color:var(--navy);margin-bottom:4px;}
   .staff-card span{font-size:13px;color:#5c6580;}
 
@@ -167,6 +170,15 @@
   }
   .step p{font-size:14.5px;color:#4a4a55;}
   .step h4{font-size:15px;color:var(--navy);margin-bottom:2px;}
+
+  .portal-cta{
+    margin-top:44px;background:var(--navy);color:var(--white);border-radius:var(--radius-lg);
+    padding:30px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  }
+  .portal-cta h3{font-size:18px;margin-bottom:6px;display:flex;align-items:center;gap:10px;}
+  .portal-cta p{font-size:14px;opacity:.85;}
+  .btn{display:inline-flex;align-items:center;gap:7px;padding:12px 22px;border-radius:999px;font-size:14px;font-weight:600;white-space:nowrap;}
+  .btn-gold{background:var(--gold);color:var(--navy-deep);}
 
   .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px;}
   @media (max-width:780px){.contact-grid{grid-template-columns:1fr;}}
@@ -214,12 +226,12 @@
 
 </style>
 </head>
-<body data-root-depth="../">
+<body data-root-depth="../../">
 
 <div class="topbar">
   <div class="wrap">
     <a class="brand" href="../index.html">
-      <img class="crest" src="../assets/images/group-logo.png" alt="School group logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <img class="crest" src="../../assets/images/group-logo.png" alt="School group logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
       <span class="crest-fallback">SF</span>
       <span class="brand-name">St. Frances' Academy Group of Schools</span>
     </a>
@@ -229,18 +241,18 @@
       <a href="about.html">About Us</a>
       <a href="academics.html">Academics</a>
       <a href="admissions.html">Admissions</a>
-      <a href="staff.html">School Management/Staff</a>
+      <a href="staff.html" aria-current="page">School Management/Staff</a>
       <a href="facilities.html">Facilities</a>
       <a href="life.html">School Life</a>
       <a href="gallery.html">Gallery</a>
-      <a href="news.html" aria-current="page">News & Events</a>
+      <a href="news.html">News & Events</a>
       <div class="nav-dropdown" id="campusesDropdown">
         <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
           Our Campuses
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </button>
         <div class="nav-dropdown-menu">
-          <a href="../annex/primary/index.html">Annex Campus</a>
+          <a href="../../primary/index.html">Main Campus</a>
         </div>
       </div>
       <div class="nav-dropdown" id="portalDropdown">
@@ -260,22 +272,49 @@
 
 <header class="page-head">
   <div class="wrap">
-    <div class="crumb"><a href="index.html">Omolere Nursery/Primary School</a> &rsaquo; News & Events</div>
-    <h1>News & Events</h1>
+    <div class="crumb"><a href="index.html">Omolere Nursery/Primary School</a> &rsaquo; School Management/Staff</div>
+    <h1>School Management/Staff</h1>
   </div>
 </header>
 
-<section class="body-section alt" id="news">
+<section class="body-section alt" id="staff">
   <div class="wrap">
-    <h2 class="section-head">News &amp; Events</h2>
-    <p class="section-lede">Announcements and upcoming dates for Omolere families.</p>
-    <div class="news-grid" id="newsList">
-      <div class="news-empty">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="3" y="4" width="18" height="16" rx="2"></rect>
-          <path d="M7 9h10M7 13h6"></path>
-        </svg>
-        <p>No news posted yet. Check back soon.</p>
+    <h2 class="section-head">School Management/Staff</h2>
+    <p class="section-lede">Omolere is led by a small, hands on management team supported by qualified class teachers across every level.</p>
+    <div class="staff-grid">
+      
+      <div class="staff-card">
+        <div class="staff-photo">
+          <img src="../../assets/images/staff/primary-administrator.jpg" alt="Administrator photo" onerror="this.style.display='none';">
+          <span class="staff-initials"></span>
+        </div>
+        <h4><span class="placeholder">OLUFUNMILAYO FASORANTI</span></h4>
+        <span>Administrator</span>
+      </div>
+      <div class="staff-card">
+        <div class="staff-photo">
+          <img src="../../assets/images/staff/primary-head-teacher2.jpg" alt="Head Teacher photo" onerror="this.style.display='none';">
+          <span class="staff-initials"></span>
+        </div>
+        <h4><span class="placeholder">AKINGBADE REGINA OLUFUNMILAYO</span></h4>
+        <span>Head Teacher(IGOBA)</span>
+      </div>
+      <div class="staff-card">
+        <div class="staff-photo">
+          <img src="../../assets/images/staff/primary-bursar.jpg" alt="Bursar photo" onerror="this.style.display='none';">
+          <span class="staff-initials"></span>
+        </div>
+        <h4><span class="placeholder">AJUMOBI PARIOLA ELIZABETH</span></h4>
+        <span>Bursar</span>
+      </div>
+       <div class="staff-card">
+        <div class="staff-photo">
+          <img src="../../assets/images/staff/primary-ict.jpg" alt="Ict photo" onerror="this.style.display='none';">
+          <span class="staff-initials"></span>
+        </div>
+        <h4><span class="placeholder">OYEWOLE MOSES</span></h4>
+        <span>ICT Director</span>
+      </div>
       </div>
     </div>
   </div>
@@ -354,12 +393,11 @@
   });
 </script>
 
-<script>window.NEWS_SCHOOL = "primary";</script>
+<script>window.NEWS_SCHOOL = "annex-primary";</script>
+<script src="../../assets/js/firebase-config.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
-<script src="../assets/js/firebase-config.js"></script>
-<script src="../assets/js/news-feed.js"></script>
-<script src="../assets/js/breaking-news.js"></script>
+<script src="../../assets/js/breaking-news.js"></script>
 
 </body>
 </html>

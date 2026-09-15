@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>News & Events | St. Frances' Academy Group</title>
-<meta name="description" content="Latest news and upcoming events for Omolere Nursery/Primary School families.">
+<title>Home | St. Frances' Academy Group</title>
+<meta name="description" content="St. Frances' Academy — secondary education from SSS1 to SSS3 in Science, Art and Commercial, part of St. Frances' Academy Group of Schools.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="St. Frances' Academy Group of Schools">
-<meta property="og:title" content="News & Events | St. Frances' Academy Group">
-<meta property="og:description" content="Latest news and upcoming events for Omolere Nursery/Primary School families.">
-<meta property="og:url" content="https://YOUR-DOMAIN-HERE.com/primary/news.html">
-<meta property="og:image" content="https://YOUR-DOMAIN-HERE.com/assets/images/og/primary-og.jpg">
+<meta property="og:title" content="Home | St. Frances' Academy Group">
+<meta property="og:description" content="St. Frances' Academy — secondary education from SSS1 to SSS3 in Science, Art and Commercial, part of St. Frances' Academy Group of Schools.">
+<meta property="og:url" content="https://YOUR-DOMAIN-HERE.com/annex/secondary/index.html">
+<meta property="og:image" content="https://YOUR-DOMAIN-HERE.com/assets/images/og/secondary-og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="News & Events | St. Frances' Academy Group">
-<meta name="twitter:description" content="Latest news and upcoming events for Omolere Nursery/Primary School families.">
-<meta name="twitter:image" content="https://YOUR-DOMAIN-HERE.com/assets/images/og/primary-og.jpg">
-<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="../assets/icons/favicon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="../assets/icons/favicon-180.png">
-<link rel="stylesheet" href="../assets/css/site-extra.css">
+<meta name="twitter:title" content="Home | St. Frances' Academy Group">
+<meta name="twitter:description" content="St. Frances' Academy — secondary education from SSS1 to SSS3 in Science, Art and Commercial, part of St. Frances' Academy Group of Schools.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN-HERE.com/assets/images/og/secondary-og.jpg">
+<link rel="icon" href="../../assets/icons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/icons/favicon-180.png">
+<link rel="stylesheet" href="../../assets/css/site-extra.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -93,38 +93,29 @@
   }
 
   /* ---------- Hero ---------- */
-  .sec-hero{background:var(--navy);color:var(--white);padding:64px 0 56px;text-align:center;border-top:4px solid var(--gold);}
-  .sec-hero .school-mark{width:72px;height:72px;border-radius:50%;object-fit:cover;margin:0 auto 18px;background:rgba(255,255,255,.9);}
+  .sec-hero{background:var(--navy);color:var(--parchment);padding:64px 0 56px;text-align:center;border-top:4px solid var(--gold);}
+  .sec-hero .school-mark{width:auto;height:96px;max-width:220px;object-fit:contain;margin:0 auto 18px;}
   .sec-hero .mark-fallback{
     width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.9);color:var(--navy);
     display:none;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:700;font-size:20px;margin:0 auto 18px;
   }
-  .sec-hero .badge{display:inline-block;background:rgba(255,255,255,.18);padding:6px 16px;border-radius:999px;font-size:13px;margin-bottom:16px;}
+  .sec-hero .badge{display:inline-block;background:rgba(184,148,95,.2);color:var(--gold);padding:6px 16px;border-radius:999px;font-size:13px;margin-bottom:16px;}
   .sec-hero h1{font-size:clamp(28px,4.5vw,42px);font-weight:600;margin-bottom:14px;}
-  .sec-hero p{max-width:520px;margin:0 auto;opacity:.92;font-size:15.5px;}
+  .sec-hero p{max-width:520px;margin:0 auto;opacity:.85;font-size:15.5px;}
 
   /* ---------- Shared section styles ---------- */
   .body-section{padding:52px 0;}
-  .body-section.alt{background:var(--parchment);}
+  .body-section.alt{background:var(--white);}
   h2.section-head{font-size:23px;color:var(--navy);font-weight:600;margin-bottom:6px;}
   p.section-lede{font-size:15px;color:#4a4a55;max-width:70ch;margin-top:8px;}
 
-  .card-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px;}
-  @media (max-width:780px){.card-row{grid-template-columns:1fr;}}
-  .pill-card{background:var(--blue-light);border-radius:var(--radius-lg);padding:24px 20px;border:1px solid rgba(27,35,80,.08);}
-  .pill-card .icon-circle{
-    width:38px;height:38px;border-radius:50%;background:var(--white);
-    display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--navy);
-  }
-  .pill-card h3{font-size:17px;color:var(--navy);margin-bottom:8px;}
-  .pill-card p{font-size:14px;color:#3f4a63;}
-
-  .simple-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px;}
+  .simple-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px;}
   @media (max-width:780px){.simple-grid{grid-template-columns:repeat(2,1fr);}}
   .simple-grid div{
     background:var(--white);border:1px solid rgba(27,35,80,.12);border-radius:var(--radius-sm);
     padding:15px 12px;font-size:13.5px;color:var(--navy);text-align:center;font-weight:500;
   }
+  .body-section.alt .simple-grid div{background:var(--blue-light);border-color:rgba(27,35,80,.08);}
 
   .staff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px;}
   @media (max-width:780px){.staff-grid{grid-template-columns:1fr;}}
@@ -149,7 +140,7 @@
 
   .news-list{margin-top:24px;display:flex;flex-direction:column;gap:14px;}
   .news-item{
-    display:flex;gap:16px;background:var(--parchment);border-radius:var(--radius-sm);
+    display:flex;gap:16px;background:var(--white);border-radius:var(--radius-sm);
     padding:16px 18px;border:1px solid rgba(0,0,0,.05);align-items:flex-start;
   }
   .news-date{
@@ -167,6 +158,17 @@
   }
   .step p{font-size:14.5px;color:#4a4a55;}
   .step h4{font-size:15px;color:var(--navy);margin-bottom:2px;}
+
+  .portal-cta{
+    margin-top:44px;background:var(--navy);color:var(--white);border-radius:var(--radius-lg);
+    padding:30px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  }
+  .portal-cta h3{font-size:18px;margin-bottom:6px;display:flex;align-items:center;gap:10px;}
+  .portal-cta p{font-size:14px;opacity:.85;}
+  .btn{display:inline-flex;align-items:center;gap:7px;padding:12px 22px;border-radius:999px;font-size:14px;font-weight:600;white-space:nowrap;}
+  .btn-gold{background:var(--gold);color:var(--navy-deep);}
+  .btn-row{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn .icon{width:16px;height:16px;}
 
   .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px;}
   @media (max-width:780px){.contact-grid{grid-template-columns:1fr;}}
@@ -196,6 +198,40 @@
   .page-head .crumb a:hover{text-decoration:underline;}
   .page-head h1{font-size:clamp(22px,3.4vw,30px);font-weight:600;}
 
+  /* ---------- Welcome Address ---------- */
+  .welcome-section{padding:52px 0 8px;}
+  .welcome-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:36px;align-items:center;margin-top:22px;}
+  @media (max-width:780px){.welcome-grid{grid-template-columns:1fr;}}
+  .welcome-photo{
+    width:100%;aspect-ratio:4/5;max-height:460px;border-radius:var(--radius-lg);background:var(--blue-light);
+    display:flex;align-items:center;justify-content:center;overflow:hidden;
+  }
+  .welcome-photo img{width:100%;height:100%;max-height:460px;object-fit:cover;object-position:center top;display:block;}
+  .welcome-photo .welcome-initial{font-family:'Fraunces',serif;font-weight:600;font-size:80px;color:var(--navy);}
+  .welcome-text .welcome-eyebrow{
+    font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;
+  }
+  .welcome-text h2{font-size:clamp(22px,3.2vw,28px);color:var(--navy);margin-bottom:16px;}
+  .welcome-text p.welcome-message{font-size:15.5px;line-height:1.75;color:var(--navy);margin-bottom:20px;}
+  .welcome-text .welcome-signoff{font-size:15px;color:var(--navy);font-weight:700;}
+  .welcome-text .welcome-role{font-size:13.5px;color:var(--navy);font-weight:500;}
+
+  /* ---------- Mission & Vision ---------- */
+  .mv-section{padding:52px 0 8px;}
+  .mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px;}
+  @media (max-width:780px){.mv-grid{grid-template-columns:1fr;}}
+  .mv-card{
+    background:var(--blue-light);border:1px solid rgba(27,35,80,.1);border-radius:var(--radius-lg);
+    padding:26px 24px;
+  }
+  .mv-card .mv-icon{
+    width:38px;height:38px;border-radius:50%;background:var(--white);color:var(--navy);
+    display:flex;align-items:center;justify-content:center;margin-bottom:14px;
+  }
+  .mv-card h3{font-size:17px;color:var(--navy);margin-bottom:8px;}
+  .mv-card p{font-size:14.5px;color:#4a4a55;}
+  .mv-card p.placeholder-text{color:#9b6f2f;font-style:italic;}
+
   /* ---------- Section-home hub links ---------- */
   .hub{padding:52px 0 70px;}
   .hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px;}
@@ -212,20 +248,47 @@
   .hub-card h3{font-size:15.5px;color:var(--navy);}
   .hub-card span.go{font-size:13px;color:var(--gold);font-weight:600;}
 
+  /* ---------- Homepage News & Gallery previews ---------- */
+  .news-home-preview .news-card:nth-child(n+4){display:none;}
+
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HighSchool",
+  "name": "St. Frances' Academy",
+  "url": "https://YOUR-DOMAIN-HERE.com/annex/secondary/index.html",
+  "logo": "https://YOUR-DOMAIN-HERE.com/assets/images/stfrances-logo.png",
+  "image": "https://YOUR-DOMAIN-HERE.com/assets/images/og/secondary-og.jpg",
+  "description": "Secondary education from SSS1 to SSS3 in Science, Art and Commercial, part of St. Frances' Academy Group of Schools.",
+  "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[ADD FULL ADDRESS]",
+      "addressLocality": "Ajaokuta",
+      "addressRegion": "Kogi State",
+      "addressCountry": "NG"
+    },
+    "telephone": "[ADD PHONE NUMBER]",
+  "parentOrganization": {
+    "@type": "EducationalOrganization",
+    "name": "St. Frances' Academy Group of Schools",
+    "url": "https://YOUR-DOMAIN-HERE.com/index.html"
+  }
+}
+</script>
 </head>
-<body data-root-depth="../">
+<body data-root-depth="../../">
 
 <div class="topbar">
   <div class="wrap">
     <a class="brand" href="../index.html">
-      <img class="crest" src="../assets/images/group-logo.png" alt="School group logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <img class="crest" src="../../assets/images/group-logo.png" alt="School group logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
       <span class="crest-fallback">SF</span>
       <span class="brand-name">St. Frances' Academy Group of Schools</span>
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
     <nav class="topnav" id="mainNav">
-      <a href="index.html">Home</a>
+      <a href="index.html" aria-current="page">Home</a>
       <a href="about.html">About Us</a>
       <a href="academics.html">Academics</a>
       <a href="admissions.html">Admissions</a>
@@ -233,14 +296,14 @@
       <a href="facilities.html">Facilities</a>
       <a href="life.html">School Life</a>
       <a href="gallery.html">Gallery</a>
-      <a href="news.html" aria-current="page">News & Events</a>
+      <a href="news.html">News & Events</a>
       <div class="nav-dropdown" id="campusesDropdown">
         <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
           Our Campuses
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </button>
         <div class="nav-dropdown-menu">
-          <a href="../annex/primary/index.html">Annex Campus</a>
+          <a href="../../secondary/index.html">Main Campus</a>
         </div>
       </div>
       <div class="nav-dropdown" id="portalDropdown">
@@ -258,18 +321,59 @@
   </div>
 </div>
 
-<header class="page-head">
+<header class="sec-hero" id="home">
   <div class="wrap">
-    <div class="crumb"><a href="index.html">Omolere Nursery/Primary School</a> &rsaquo; News & Events</div>
-    <h1>News & Events</h1>
+    <img class="school-mark" src="../../assets/images/stfrances-logo.png" alt="St. Frances' Academy logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <span class="mark-fallback">SF</span>
+    <h1>St. Frances' Academy</h1>
+     <span class="badge">Day and Boarding</span>
+    <p>Structured, subject led secondary education preparing students for WAEC, NECO, and the years beyond.</p>
   </div>
 </header>
 
-<section class="body-section alt" id="news">
+
+
+<section class="welcome-section" id="welcome">
+  <div class="wrap">
+    <div class="welcome-grid">
+      <div class="welcome-photo">
+        <img src="../../assets/images/staff/annex-secondary-cordinator.jpg" alt="Principal photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="welcome-initial" style="display:none;">P</span>
+      </div>
+      <div class="welcome-text">
+        <div class="welcome-eyebrow">A Welcome Address From Our Cordinatorl</div>
+        <p class="welcome-message">As an offshoot of Omolere Nursery/Primary School, we carry forward the same values of discipline, care, and academic excellence, now shaped for the secondary school years. This is the stage where young people begin to find their direction, and our role is to guide that process with structure, patience, and high expectations.
+Our students are prepared not just to pass WAEC and NECO, but to think clearly, work hard, and carry themselves with confidence beyond the classroom. We run a full academic programme alongside clubs, sports, and leadership opportunities, because we believe a well rounded student performs better in every area of life.
+We maintain close attention to each student's progress, both Day and Boarding, and we work in partnership with parents every step of the way. Our doors are always open to you, and we welcome you to visit the campus and see our approach firsthand.
+Thank you for trusting St. Frances' Academy with your child's secondary education.</p>
+        <div class="welcome-signoff">ADEYEMI LOAYEMI JOSEPHINE</div>
+        <div class="welcome-role">CORDINATOR</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mv-section" id="mission">
+  <div class="wrap">
+    <h1 class="section-head">Mission &amp; Vision</h1>
+    <div class="mv-grid">
+      <div class="mv-card">
+        <h2>Our Mission</h2>
+        <p>To provide high-quality education balanced with firm discipline, moral values, and civic responsibility.</p>
+      </div>
+      <div class="mv-card">
+        <h2>Our Vision</h2>
+        <p>To ignite the flames of leadership within every student, cultivating character, resilience, and personal growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="body-section alt" id="news-preview">
   <div class="wrap">
     <h2 class="section-head">News &amp; Events</h2>
-    <p class="section-lede">Announcements and upcoming dates for Omolere families.</p>
-    <div class="news-grid" id="newsList">
+    <p class="section-lede">Recent announcements and upcoming dates for St. Frances' Academy families.</p>
+    <div class="news-grid news-home-preview" id="newsList">
       <div class="news-empty">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
           <rect x="3" y="4" width="18" height="16" rx="2"></rect>
@@ -277,6 +381,73 @@
         </svg>
         <p>No news posted yet. Check back soon.</p>
       </div>
+    </div>
+    <a class="back-link" href="news.html">View all news &amp; events &rarr;</a>
+  </div>
+</section>
+
+<section class="body-section" id="gallery-preview">
+  <div class="wrap">
+    <h2 class="section-head">Gallery</h2>
+    <p class="section-lede">A glimpse of life at St. Frances' Academy.</p>
+    <div class="gallery-grid gallery-home-preview">
+      <div class="gallery-tile"><img src="../../assets/images/gallery/annex-stfrances-1.jpg" alt="St. Frances' Academy photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="gallery-fallback"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="8.5" cy="10" r="1.5"></circle><path d="m3 17 5-5 4 4 3-3 6 6"></path></svg></div></div>
+      <div class="gallery-tile"><img src="../../assets/images/gallery/annex-stfrances-2.jpg" alt="St. Frances' Academy photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="gallery-fallback"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="8.5" cy="10" r="1.5"></circle><path d="m3 17 5-5 4 4 3-3 6 6"></path></svg></div></div>
+      <div class="gallery-tile"><img src="../../assets/images/gallery/annex-stfrances-3.jpg" alt="St. Frances' Academy photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="gallery-fallback"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="8.5" cy="10" r="1.5"></circle><path d="m3 17 5-5 4 4 3-3 6 6"></path></svg></div></div>
+    </div>
+    <a class="back-link" href="gallery.html">View full gallery &rarr;</a>
+  </div>
+</section>
+
+<section class="hub">
+  <div class="wrap">
+    <h2 class="section-head">Explore this section</h2>
+    <div class="hub-grid">
+      <a class="hub-card" href="about.html" style="text-decoration:none;">
+        <span class="hub-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+        <h3>About Us</h3>
+        <span class="go">View About Us &rarr;</span>
+      </a>
+      <a class="hub-card" href="academics.html" style="text-decoration:none;">
+        <span class="hub-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+        <h3>Academics</h3>
+        <span class="go">View Academics &rarr;</span>
+      </a>
+      <a class="hub-card" href="admissions.html" style="text-decoration:none;">
+        <span class="hub-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+        <h3>Admissions</h3>
+        <span class="go">View Admissions &rarr;</span>
+      </a>
+      <a class="hub-card" href="staff.html" style="text-decoration:none;">
+        <span class="hub-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+        <h3>School Management/Staff</h3>
+        <span class="go">View School Management/Staff &rarr;</span>
+      </a>
+      <a class="hub-card" href="facilities.html" style="text-decoration:none;">
+        <span class="hub-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+        <h3>Facilities</h3>
+        <span class="go">View Facilities &rarr;</span>
+      </a>
+      <a class="hub-card" href="life.html" style="text-decoration:none;">
+        <span class="hub-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+        <h3>School Life</h3>
+        <span class="go">View School Life &rarr;</span>
+      </a>
+      <a class="hub-card" href="gallery.html" style="text-decoration:none;">
+        <span class="hub-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+        <h3>Gallery</h3>
+        <span class="go">View Gallery &rarr;</span>
+      </a>
+      <a class="hub-card" href="news.html" style="text-decoration:none;">
+        <span class="hub-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+        <h3>News & Events</h3>
+        <span class="go">View News & Events &rarr;</span>
+      </a>
+      <a class="hub-card" href="contact.html" style="text-decoration:none;">
+        <span class="hub-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+        <h3>Contact Us</h3>
+        <span class="go">View Contact Us &rarr;</span>
+      </a>
     </div>
   </div>
 </section>
@@ -315,8 +486,8 @@
     <div>
       <h5>Sections</h5>
       <ul>
-        <li><a href="index.html">Omolere Primary</a></li>
-        <li><a href="../secondary/index.html">St. Frances' Academy</a></li>
+        <li><a href="index.html">St. Frances' Academy</a></li>
+        <li><a href="../primary/index.html">Omolere Primary</a></li>
       </ul>
     </div>
   </div>
@@ -354,12 +525,12 @@
   });
 </script>
 
-<script>window.NEWS_SCHOOL = "primary";</script>
+<script>window.NEWS_SCHOOL = "annex-secondary";</script>
+<script src="../../assets/js/firebase-config.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
-<script src="../assets/js/firebase-config.js"></script>
-<script src="../assets/js/news-feed.js"></script>
-<script src="../assets/js/breaking-news.js"></script>
+<script src="../../assets/js/news-feed.js"></script>
+<script src="../../assets/js/breaking-news.js"></script>
 
 </body>
 </html>
