@@ -13,6 +13,34 @@ html, body{ height:100%; }
 body{ display:flex; flex-direction:column; min-height:100vh; }
 body > footer{ margin-top:auto; }
 
+/* ---------- Footer social media links ---------- */
+.social-links{
+  display:flex;
+  gap:10px;
+  margin-top:14px;
+}
+.social-links a{
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  background:rgba(246,242,233,.08);
+  border:1px solid rgba(246,242,233,.18);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:rgba(246,242,233,.85);
+  transition:background .15s ease, color .15s ease, transform .15s ease;
+}
+.social-links a:hover, .social-links a:focus-visible{
+  background:var(--gold, #b8945f);
+  color:var(--navy-deep, #12172F);
+  transform:translateY(-2px);
+}
+.social-links svg{
+  width:17px;
+  height:17px;
+}
+
 /* ---------- Loading spinner (news feed, article page) ---------- */
 .spinner{
   width:32px; height:32px; border-radius:50%; flex-shrink:0;
