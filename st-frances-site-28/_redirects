@@ -1,0 +1,2 @@
+# Force all traffic from the old Netlify subdomain to the real domain
+https://stfrances-groupofschools.netlify.app/*  https://omolerestfrances.com/:splat  301!
