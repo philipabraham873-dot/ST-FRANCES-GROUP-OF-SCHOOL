@@ -1,2 +1,46 @@
 # Force all traffic from the old Netlify subdomain to the real domain
 https://stfrances-groupofschools.netlify.app/*  https://omolerestfrances.com/:splat  301!
+
+# Force old .html URLs to the new clean URLs (avoids duplicate-content indexing issues)
+/index.html  /  301!
+/primary/index.html  /primary/  301!
+/primary/about.html  /primary/about/  301!
+/primary/academics.html  /primary/academics/  301!
+/primary/admissions.html  /primary/admissions/  301!
+/primary/staff.html  /primary/staff/  301!
+/primary/facilities.html  /primary/facilities/  301!
+/primary/life.html  /primary/life/  301!
+/primary/gallery.html  /primary/gallery/  301!
+/primary/news.html  /primary/news/  301!
+/primary/contact.html  /primary/contact/  301!
+/secondary/index.html  /secondary/  301!
+/secondary/about.html  /secondary/about/  301!
+/secondary/academics.html  /secondary/academics/  301!
+/secondary/admissions.html  /secondary/admissions/  301!
+/secondary/staff.html  /secondary/staff/  301!
+/secondary/facilities.html  /secondary/facilities/  301!
+/secondary/life.html  /secondary/life/  301!
+/secondary/gallery.html  /secondary/gallery/  301!
+/secondary/news.html  /secondary/news/  301!
+/secondary/contact.html  /secondary/contact/  301!
+/annex/index.html  /annex/  301!
+/annex/primary/index.html  /annex/primary/  301!
+/annex/primary/about.html  /annex/primary/about/  301!
+/annex/primary/academics.html  /annex/primary/academics/  301!
+/annex/primary/admissions.html  /annex/primary/admissions/  301!
+/annex/primary/staff.html  /annex/primary/staff/  301!
+/annex/primary/facilities.html  /annex/primary/facilities/  301!
+/annex/primary/life.html  /annex/primary/life/  301!
+/annex/primary/gallery.html  /annex/primary/gallery/  301!
+/annex/primary/news.html  /annex/primary/news/  301!
+/annex/primary/contact.html  /annex/primary/contact/  301!
+/annex/secondary/index.html  /annex/secondary/  301!
+/annex/secondary/about.html  /annex/secondary/about/  301!
+/annex/secondary/academics.html  /annex/secondary/academics/  301!
+/annex/secondary/admissions.html  /annex/secondary/admissions/  301!
+/annex/secondary/staff.html  /annex/secondary/staff/  301!
+/annex/secondary/facilities.html  /annex/secondary/facilities/  301!
+/annex/secondary/life.html  /annex/secondary/life/  301!
+/annex/secondary/gallery.html  /annex/secondary/gallery/  301!
+/annex/secondary/news.html  /annex/secondary/news/  301!
+/annex/secondary/contact.html  /annex/secondary/contact/  301!

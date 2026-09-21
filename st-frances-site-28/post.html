@@ -105,14 +105,14 @@
 
 <div class="topbar">
   <div class="wrap">
-    <a class="brand" href="index.html">
+    <a class="brand" href="/">
       <img class="crest" src="assets/images/group-logo.png" alt="School group logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
       <span class="crest-fallback">SF</span>
       <span class="brand-name">St. Frances' Academy Group of Schools</span>
     </a>
     <nav class="topnav">
-      <a href="primary/index.html">Primary</a>
-      <a href="secondary/index.html">Secondary</a>
+      <a href="/primary/">Primary</a>
+      <a href="/secondary/">Secondary</a>
     </nav>
   </div>
 </div>
@@ -156,7 +156,7 @@
 
   function showError() {
     wrap.innerHTML = '<div class="post-error"><p>We couldn\'t find that article. It may have been removed.</p>' +
-      '<p style="margin-top:10px;"><a href="index.html">Back to the group homepage</a></p></div>';
+      '<p style="margin-top:10px;"><a href="/">Back to the group homepage</a></p></div>';
   }
 
   if (!id) { showError(); return; }
